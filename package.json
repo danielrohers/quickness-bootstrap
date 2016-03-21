@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bootstrap for static site with gulp + jade + minify + uglify",
   "scripts": {
-    "preview": "http-server dist"
+    "start": "http-server dist"
   },
   "author": "Daniel Rôhers Moura <rohersmoura@gmail.com> (https://github.com/danielrohers)",
   "license": "MIT",
