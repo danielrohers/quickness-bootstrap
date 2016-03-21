@@ -8,5 +8,3 @@ before_script:
   - npm install -g gulp
 script:
   - gulp dist
-  - gulp watch
-  - npm run preview
