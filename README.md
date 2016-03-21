@@ -9,21 +9,21 @@ Bootstrap for static site with gulp + jade + minify + uglify
 ```
 project
 |-- _includes <-- Include files - http://jade-lang.com/reference/includes
-    |-- footer.jade
-    |-- navbar.jade
+|   |-- footer.jade
+|   |-- navbar.jade
 |-- _layouts <-- Layout files - http://jade-lang.com/reference/extends
-    |-- default.jade
+|   |-- default.jade
 |-- _mixins <-- Mixin files - http://jade-lang.com/reference/mixins
 |-- _site <-- Your jade files to site
-    |-- contact.jade
-    |-- features.jade
-    |-- index.jade
+|   |-- contact.jade
+|   |-- features.jade
+|   |-- index.jade
 |-- assets
-    |-- images
-    |-- javascripts
-        |-- example.js
-    |-- stylesheets
-        |-- example.css
+|   |-- images
+|   |-- javascripts
+|   |   |-- example.js
+|   |-- stylesheets
+|   |   |-- example.css
 |-- dist <-- Folder with compiled files
 |-- .editorconfig <-- Indentation  styles - http://editorconfig.org
 |-- .gitignore
