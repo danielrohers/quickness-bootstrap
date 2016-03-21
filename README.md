@@ -23,6 +23,7 @@ Bootstrap for static site with gulp + jade + minify + uglify + image optimizatio
 |   |   |-- index.jade
 |   |-- assets
 |   |   |-- images
+|   |   |   |-- example.png
 |   |   |-- javascripts
 |   |   |   |-- example.js
 |   |   |-- stylesheets
