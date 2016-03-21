@@ -68,6 +68,10 @@ body {
   margin-bottom: 10px;
 }
 
+.masthead-brand img {
+  width: 3.5rem;
+}
+
 .masthead-nav > li {
   display: inline-block;
 }
