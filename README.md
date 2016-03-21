@@ -18,8 +18,8 @@ project
         |-- example.js
     |-- stylesheets
         |-- example.css
-|-- dist
-|-- .editorconfig
+|-- dist <-- Folder with compiled files
+|-- .editorconfig <-- Indentation  styles - http://editorconfig.org
 |-- .gitignore
 |-- gulpfile.js
 |-- package.json
