@@ -26,20 +26,31 @@ project
 
 ### Installation
 
-> [Install NodeJS](https://nodejs.org/en)
+[Install NodeJS](https://nodejs.org/en)
 
-> npm install
+```bash
+npm install
+```
 
 ## Launching
 
 Compile files
 
-> gulp dist
+```bash
+gulp dist
+```
 
 Watch files
 
-> gulp watch
+```bash
+gulp watch
+```
 
 Preview compiled files
 
-> npm run preview
+```bash
+npm run preview
+```
+
+## Licence
+[Licence](https://github.com/danielrohers/static-bootstrap/blob/master/LICENSE)
