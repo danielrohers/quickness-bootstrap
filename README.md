@@ -36,15 +36,21 @@ npm install
 
 Compile files
 
-> gulp dist
+```bash
+gulp dist
+```
 
 Watch files
 
-> gulp watch
+```bash
+gulp watch
+```
 
 Preview compiled files
 
-> npm run preview
+```bash
+npm run preview
+```
 
 ## Licence
 [Licence](https://github.com/danielrohers/static-bootstrap/blob/master/LICENSE)
