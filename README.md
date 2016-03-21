@@ -5,6 +5,7 @@ Bootstrap for static site with gulp + jade + minify + uglify
 ## Setup
 
 ## Structure
+
 ```
 project
 |-- _includes <-- Include files - http://jade-lang.com/reference/includes
