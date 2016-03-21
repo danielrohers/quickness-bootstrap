@@ -26,9 +26,11 @@ project
 
 ### Installation
 
-> [Install NodeJS](https://nodejs.org/en)
+[Install NodeJS](https://nodejs.org/en)
 
-> npm install
+```bash
+npm install
+```
 
 ## Launching
 
@@ -43,3 +45,6 @@ Watch files
 Preview compiled files
 
 > npm run preview
+
+## Licence
+[Licence](https://github.com/danielrohers/static-bootstrap/blob/master/LICENSE)
