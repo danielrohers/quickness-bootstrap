@@ -4,6 +4,8 @@ Bootstrap for static site with gulp + jade + minify + uglify
 
 [![Build Status](https://travis-ci.org/danielrohers/static-bootstrap.svg?branch=master)](https://travis-ci.org/danielrohers/static-bootstrap)
 
+[![devDependency Status](https://david-dm.org/danielrohers/static-bootstrap/dev-status.svg)](https://david-dm.org/danielrohers/static-bootstrap#info=devDependencies)
+
 ## Setup
 
 ## Structure
