@@ -30,7 +30,7 @@ project
 [Install NodeJS](https://nodejs.org/en)
 
 ```bash
-npm install
+[sudo] npm install
 ```
 
 ## Launching
