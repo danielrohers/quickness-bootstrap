@@ -1,6 +1,6 @@
 # static-bootstrap
 
-Bootstrap for static site with gulp + jade + minify + uglify
+Bootstrap for static site with gulp + jade + minify + uglify + image optimization
 
 [![Build Status](https://travis-ci.org/danielrohers/static-bootstrap.svg?branch=master)](https://travis-ci.org/danielrohers/static-bootstrap)
 [![devDependency Status](https://david-dm.org/danielrohers/static-bootstrap/dev-status.svg)](https://david-dm.org/danielrohers/static-bootstrap#info=devDependencies)
@@ -59,7 +59,7 @@ gulp watch
 Preview compiled files
 
 ```bash
-npm run preview
+npm start
 ```
 
 ## Licence
