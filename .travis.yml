@@ -6,4 +6,7 @@ install:
   - npm install
 before_script:
   - npm install -g gulp
-script: gulp dist
+script:
+  - gulp dist
+  - gulp watch
+  - npm run preview
