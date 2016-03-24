@@ -63,5 +63,11 @@ Preview compiled files
 npm start
 ```
 
+or
+
+```bash
+gulp serve
+```
+
 ## Licence
 [Licence](https://github.com/danielrohers/static-bootstrap/blob/master/LICENSE)

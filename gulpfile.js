@@ -13,7 +13,7 @@ let paths = {
   images: 'assets/images',
   stylesheets: 'assets/stylesheets',
   javascripts: 'assets/javascripts',
-  templates: ['_includes/**.jade', '_layouts/**.jade', '_mixins/**.jade', '_site/**.jade']
+  templates: ['_includes/**', '_layouts/**', '_mixins/**', '_site/**']
 };
 
 gulp.task('clean:images', () => {
@@ -65,11 +65,11 @@ gulp.task('watch', () => {
 });
 
 gulp.task('serve', () => {
-  return gulp.src('./')
+  return gulp.src('./dist')
     .pipe(webserver({
-      directoryListing: true,
+      directoryListing: false,
       open: true,
-      port: process.env.PORT || '8000',
+      port: process.env.PORT || '8080',
       host: process.env.IP || 'localhost'
     }));
 });
