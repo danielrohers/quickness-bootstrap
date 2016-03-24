@@ -6,6 +6,7 @@ const cleanCSS = require('gulp-clean-css');
 const jade = require('gulp-jade');
 const uglify = require('gulp-uglify');
 const image = require('gulp-image');
+const webserver = require('gulp-webserver');
 
 let paths = {
   dist: 'dist',
@@ -61,6 +62,16 @@ gulp.task('watch', () => {
   gulp.watch(`${paths.javascripts}/**.js`, ['uglify']);
   gulp.watch(`${paths.images}/**`, ['images']);
   gulp.watch(paths.templates, ['templates']);
+});
+
+gulp.task('serve', () => {
+  return gulp.src('./')
+    .pipe(webserver({
+      directoryListing: true,
+      open: true,
+      port: process.env.PORT || '8000',
+      host: process.env.IP || 'localhost'
+    }));
 });
 
 gulp.task('dist', ['images', 'minify', 'templates', 'uglify']);
