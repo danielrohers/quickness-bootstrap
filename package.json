@@ -1,7 +1,7 @@
 {
   "name": "static-bootstrap",
   "version": "1.0.0",
-  "description": "Bootstrap for static site with gulp + jade + minify + uglify + image optimization",
+  "description": "Bootstrap for static site with gulp + pug + minify + uglify + image optimization",
   "scripts": {
     "start": "gulp dist && gulp serve"
   },
