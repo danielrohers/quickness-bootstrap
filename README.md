@@ -1,26 +1,40 @@
 # static-bootstrap
 
-Bootstrap for static site with gulp + jade + minify + uglify + image optimization
+Bootstrap for static site with gulp + pug + minify + uglify + image optimization
 
 [![Build Status](https://travis-ci.org/danielrohers/static-bootstrap.svg?branch=master)](https://travis-ci.org/danielrohers/static-bootstrap)
 [![devDependency Status](https://david-dm.org/danielrohers/static-bootstrap/dev-status.svg)](https://david-dm.org/danielrohers/static-bootstrap#info=devDependencies)
 
-## Setup
+## Requirements
+
+#### Install NodeJS
+- https://nodejs.org/en
+
+#### Install dependencies
+```bash
+[sudo] npm install
+```
+or
+```bash
+yarn
+```
 
 ## Structure
 
 ```
 |-- project
-|   |-- _includes <-- Include files - http://jade-lang.com/reference/includes
-|   |   |-- footer.jade
-|   |   |-- navbar.jade
-|   |-- _layouts <-- Layout files - http://jade-lang.com/reference/extends
-|   |   |-- default.jade
-|   |-- _mixins <-- Mixin files - http://jade-lang.com/reference/mixins
-|   |-- _site <-- Your jade files to site
-|   |   |-- contact.jade
-|   |   |-- features.jade
-|   |   |-- index.jade
+|   |-- _includes <-- Include files - https://pugjs.org/language/includes.html
+|   |   |-- footer.pug
+|   |   |-- navbar.pug
+|   |-- _layouts <-- Layout files - https://pugjs.org/language/extends.html
+|   |   |-- default.pug
+|   |-- _mixins <-- Mixin files - https://pugjs.org/language/mixins.html
+|   |-- _site <-- Your pug files to site
+|   |   |-- contact
+|   |   |   |-- index.pug
+|   |   |-- features
+|   |   |   |-- index.pug
+|   |   |-- index.pug
 |   |-- assets
 |   |   |-- images
 |   |   |   |-- example.png
@@ -33,14 +47,6 @@ Bootstrap for static site with gulp + jade + minify + uglify + image optimizatio
 |   |-- .gitignore
 |   |-- gulpfile.js
 |   |-- package.json
-```
-
-### Installation
-
-[Install NodeJS](https://nodejs.org/en)
-
-```bash
-[sudo] npm install
 ```
 
 ## Launching
