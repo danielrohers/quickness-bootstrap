@@ -5,5 +5,6 @@ module.exports = {
     ],
     "rules": {
       "import/no-extraneous-dependencies": "off",
+      "arrow-body-style": "off",
     }
 };
