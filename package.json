@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Bootstrap for static site with gulp + pug + minify + uglify + image optimization",
   "scripts": {
-    "start": "gulp dist && gulp serve"
+    "start": "gulp dist && gulp serve",
+    "eslint": "eslint *.js"
   },
   "author": "Daniel Rôhers Moura <rohersmoura@gmail.com> (https://github.com/danielrohers)",
   "license": "MIT",
