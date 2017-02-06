@@ -24,13 +24,10 @@
     "eslint-config-airbnb-base": "^11.0.0",
     "eslint-plugin-import": "^2.2.0",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.3",
+    "gulp-clean-css": "^3.0.0",
     "gulp-image": "^2.7.2",
     "gulp-pug": "^3.2.0",
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1"
-  },
-  "dependencies": {
-    "clean-css": "^4.0.4"
   }
 }
