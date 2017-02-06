@@ -29,5 +29,8 @@
     "gulp-pug": "^3.2.0",
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "clean-css": "^4.0.4"
   }
 }
