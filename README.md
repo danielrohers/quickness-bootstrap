@@ -44,13 +44,13 @@ Bootstrap for static site with [gulp](http://gulpjs.com) + [pug](https://pugjs.o
 
 The quickest way to get started with quickness is to utilize the executable `quickness(1)` to generate an application as shown below:
 
-Create the app:
+**Create the app:**
 ```bash
 $ npm install -g quickness
 $ quickness foo && cd foo
 ```
 
-Install dependencies:
+**Install dependencies:**
 ```bash
 $ npm install
 ```
@@ -59,12 +59,12 @@ or
 $ yarn
 ```
 
-Development
+**Development:**
 ```bash
 $ npm start
 ```
 
-Compile files
+**Compile files:**
 
 ```bash
 $ npm run deploy
