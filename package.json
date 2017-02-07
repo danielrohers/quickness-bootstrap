@@ -4,6 +4,7 @@
   "description": "Bootstrap for static site with gulp + pug + minify + uglify + image optimization",
   "scripts": {
     "start": "gulp dist && gulp serve",
+    "dev": "gulp watch",
     "eslint": "eslint *.js"
   },
   "author": "Daniel Rôhers Moura <rohersmoura@gmail.com> (https://github.com/danielrohers)",

@@ -59,7 +59,7 @@ gulp.task('uglify', ['clean:javascripts'], () => {
     .pipe(gulp.dest(`${paths.dist}/${paths.javascripts}`));
 });
 
-gulp.task('watch', () => {
+gulp.task('watch', ['dist', 'serve'], () => {
   gulp.watch(paths.images, ['images']);
   gulp.watch(`${paths.stylesheets}/**.css`, ['minify']);
   gulp.watch(`${paths.javascripts}/**.js`, ['uglify']);
