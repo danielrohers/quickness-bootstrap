@@ -1,12 +1,10 @@
-const fs = require('fs');
-const path = require('path');
 const gulp = require('gulp');
 const del = require('del');
-const cleanCSS = require('gulp-clean-css');
 const pug = require('gulp-pug');
 const uglify = require('gulp-uglify');
 const imagemin = require('gulp-imagemin');
 const webserver = require('gulp-webserver');
+const stylus = require('gulp-stylus');
 
 const paths = {
   dist: 'dist',
@@ -44,8 +42,11 @@ gulp.task('images', ['clean:images'], () => {
 });
 
 gulp.task('minify', ['clean:stylesheets'], () => {
-  return gulp.src(`${paths.stylesheets}/**.css`)
-    .pipe(cleanCSS({ compatibility: 'ie8' }))
+  return gulp.src(`${paths.stylesheets}/**.styl`)
+    .pipe(stylus({
+      'include css': true,
+      compress: true,
+    }))
     .pipe(gulp.dest(`${paths.dist}/${paths.stylesheets}`));
 });
 
@@ -66,7 +67,7 @@ gulp.task('watch:images', () => {
 });
 
 gulp.task('watch:minify', () => {
-  return gulp.watch(`${paths.stylesheets}/**.css`, ['minify']);
+  return gulp.watch(`${paths.stylesheets}/**.styl`, ['minify']);
 });
 
 gulp.task('watch:templates', () => {

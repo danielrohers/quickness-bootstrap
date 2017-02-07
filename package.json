@@ -1,7 +1,7 @@
 {
   "name": "quickness-bootstrap",
   "version": "1.0.0",
-  "description": "Bootstrap for static site with gulp + pug + minify + uglify + image optimization",
+  "description": "Bootstrap for static site with gulp + pug + stylus + uglify + image optimization",
   "scripts": {
     "start": "gulp serve",
     "deploy": "gulp dist"
@@ -21,9 +21,9 @@
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.0.0",
     "gulp-imagemin": "^3.1.1",
     "gulp-pug": "^3.2.0",
+    "gulp-stylus": "^2.6.0",
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1"
   }
