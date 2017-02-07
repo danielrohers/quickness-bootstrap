@@ -10,15 +10,6 @@ Bootstrap for static site with [gulp](http://gulpjs.com) + [pug](https://pugjs.o
 #### Install NodeJS
 - https://nodejs.org
 
-#### Install dependencies
-```bash
-[sudo] npm install
-```
-or
-```bash
-yarn
-```
-
 ## Structure
 
 ```
@@ -49,16 +40,28 @@ yarn
 |   |-- package.json
 ```
 
-## Launching
+## Quick Start
 
-Development
+The quickest way to get started with quickness is to utilize the executable `quickness(1)` to generate an application as shown below:
 
+Create the app:
 ```bash
-$ npm start
+$ npm install -g quickness
+$ quickness foo && cd foo
+```
+
+Install dependencies:
+```bash
+$ npm install
 ```
 or
 ```bash
-$ gulp serve
+$ yarn
+```
+
+Development
+```bash
+$ npm start
 ```
 
 Compile files
