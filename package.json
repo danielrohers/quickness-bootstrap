@@ -4,8 +4,7 @@
   "description": "Bootstrap for static site with gulp + pug + minify + uglify + image optimization",
   "scripts": {
     "start": "gulp dist && gulp serve",
-    "dev": "gulp watch",
-    "eslint": "eslint *.js"
+    "dev": "gulp watch"
   },
   "author": "Daniel Rôhers Moura <rohersmoura@gmail.com> (https://github.com/danielrohers)",
   "license": "MIT",
@@ -21,9 +20,6 @@
   },
   "devDependencies": {
     "del": "^2.2.0",
-    "eslint": "^3.12.0",
-    "eslint-config-airbnb-base": "^11.0.0",
-    "eslint-plugin-import": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.0",
     "gulp-image": "^2.7.2",
