@@ -54,27 +54,21 @@ yarn
 Development
 
 ```bash
-npm run dev
+$ npm start
 ```
 or
 ```bash
-gulp watch
-```
-
-Preview compiled files
-
-```bash
-npm start
-```
-or
-```bash
-gulp serve
+$ gulp serve
 ```
 
 Compile files
 
 ```bash
-gulp dist
+$ npm run deploy
+```
+or
+```bash
+$ gulp dist
 ```
 
 ## Licence

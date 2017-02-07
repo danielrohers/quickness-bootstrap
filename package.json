@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Bootstrap for static site with gulp + pug + minify + uglify + image optimization",
   "scripts": {
-    "start": "gulp dist && gulp serve",
-    "dev": "gulp watch"
+    "start": "gulp serve",
+    "deploy": "gulp dist"
   },
   "author": "Daniel Rôhers Moura <rohersmoura@gmail.com> (https://github.com/danielrohers)",
   "license": "MIT",
@@ -22,7 +22,7 @@
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^3.0.0",
-    "gulp-image": "^2.7.2",
+    "gulp-imagemin": "^3.1.1",
     "gulp-pug": "^3.2.0",
     "gulp-uglify": "^2.0.0",
     "gulp-webserver": "^0.9.1"

@@ -3,7 +3,7 @@ const del = require('del');
 const cleanCSS = require('gulp-clean-css');
 const pug = require('gulp-pug');
 const uglify = require('gulp-uglify');
-const image = require('gulp-image');
+const imagemin = require('gulp-imagemin');
 const webserver = require('gulp-webserver');
 
 const paths = {
@@ -37,7 +37,7 @@ gulp.task('clean:templates', () => {
 
 gulp.task('images', ['clean:images'], () => {
   return gulp.src(`${paths.images}/**`)
-    .pipe(image())
+    .pipe(imagemin())
     .pipe(gulp.dest(`${paths.dist}/${paths.images}`));
 });
 
@@ -59,19 +59,18 @@ gulp.task('uglify', ['clean:javascripts'], () => {
     .pipe(gulp.dest(`${paths.dist}/${paths.javascripts}`));
 });
 
-gulp.task('watch', ['dist', 'serve'], () => {
-  gulp.watch(paths.images, ['images']);
-  gulp.watch(`${paths.stylesheets}/**.css`, ['minify']);
-  gulp.watch(`${paths.javascripts}/**.js`, ['uglify']);
+gulp.task('watch', () => {
   gulp.watch(`${paths.images}/**`, ['images']);
+  gulp.watch(`${paths.stylesheets}/**.css`, ['minify']);
   gulp.watch(Object.values(paths.templates), ['templates']);
+  gulp.watch(`${paths.javascripts}/**.js`, ['uglify']);
 });
 
-gulp.task('serve', () => {
+gulp.task('serve', ['dist', 'watch'], () => {
   gulp.src('./dist')
     .pipe(webserver({
+      livereload: true,
       directoryListing: false,
-      open: true,
       port: process.env.PORT || '8080',
       host: process.env.IP || 'localhost',
     }));
