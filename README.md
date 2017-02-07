@@ -2,8 +2,8 @@
 
 Bootstrap for static site with gulp + pug + minify + uglify + image optimization
 
-[![Build Status](https://travis-ci.org/danielrohers/static-bootstrap.svg?branch=master)](https://travis-ci.org/danielrohers/static-bootstrap)
-[![devDependency Status](https://david-dm.org/danielrohers/static-bootstrap/dev-status.svg)](https://david-dm.org/danielrohers/static-bootstrap#info=devDependencies)
+[![Build Status](https://travis-ci.org/danielrohers/quickness-bootstrap.svg?branch=master)](https://travis-ci.org/danielrohers/quickness-bootstrap)
+[![devDependency Status](https://david-dm.org/danielrohers/quickness-bootstrap/dev-status.svg)](https://david-dm.org/danielrohers/quickness-bootstrap#info=devDependencies)
 
 ## Requirements
 
