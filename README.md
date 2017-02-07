@@ -1,6 +1,6 @@
 # quickness-bootstrap
 
-Bootstrap for static site with gulp + pug + minify + uglify + image optimization
+Bootstrap for static site with [gulp](http://gulpjs.com) + [pug](https://pugjs.org) + [minify](https://www.npmjs.com/package/gulp-clean-css) + [uglify](https://www.npmjs.com/package/gulp-uglify) + [image optimization](https://www.npmjs.com/package/gulp-imagemin)
 
 [![Build Status](https://travis-ci.org/danielrohers/quickness-bootstrap.svg?branch=master)](https://travis-ci.org/danielrohers/quickness-bootstrap)
 [![devDependency Status](https://david-dm.org/danielrohers/quickness-bootstrap/dev-status.svg)](https://david-dm.org/danielrohers/quickness-bootstrap#info=devDependencies)
