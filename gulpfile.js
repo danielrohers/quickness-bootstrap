@@ -1,3 +1,5 @@
+const fs = require('fs');
+const path = require('path');
 const gulp = require('gulp');
 const del = require('del');
 const cleanCSS = require('gulp-clean-css');
@@ -59,14 +61,25 @@ gulp.task('uglify', ['clean:javascripts'], () => {
     .pipe(gulp.dest(`${paths.dist}/${paths.javascripts}`));
 });
 
-gulp.task('watch', () => {
-  gulp.watch(`${paths.images}/**`, ['images']);
-  gulp.watch(`${paths.stylesheets}/**.css`, ['minify']);
-  gulp.watch(Object.values(paths.templates), ['templates']);
-  gulp.watch(`${paths.javascripts}/**.js`, ['uglify']);
+gulp.task('watch:images', () => {
+  return gulp.watch(`${paths.images}/**`, ['images']);
 });
 
-gulp.task('serve', ['dist', 'watch'], () => {
+gulp.task('watch:minify', () => {
+  return gulp.watch(`${paths.stylesheets}/**.css`, ['minify']);
+});
+
+gulp.task('watch:templates', () => {
+  return gulp.watch(Object.values(paths.templates), ['templates']);
+});
+
+gulp.task('watch:uglify', () => {
+  return gulp.watch(`${paths.javascripts}/**.js`, ['uglify']);
+});
+
+gulp.task('watch', ['watch:images', 'watch:minify', 'watch:templates', 'watch:uglify']);
+
+gulp.task('serve', ['watch', 'dist'], () => {
   gulp.src('./dist')
     .pipe(webserver({
       livereload: true,
