@@ -8,7 +8,7 @@ Bootstrap for static site with gulp + pug + minify + uglify + image optimization
 ## Requirements
 
 #### Install NodeJS
-- https://nodejs.org/en
+- https://nodejs.org
 
 #### Install dependencies
 ```bash
@@ -51,14 +51,12 @@ yarn
 
 ## Launching
 
-Compile files
+Development
 
 ```bash
-gulp dist
+npm run dev
 ```
-
-Watch files
-
+or
 ```bash
 gulp watch
 ```
@@ -68,11 +66,15 @@ Preview compiled files
 ```bash
 npm start
 ```
-
 or
-
 ```bash
 gulp serve
+```
+
+Compile files
+
+```bash
+gulp dist
 ```
 
 ## Licence
