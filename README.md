@@ -1,4 +1,4 @@
-# static-bootstrap
+# quickness-bootstrap
 
 Bootstrap for static site with gulp + pug + minify + uglify + image optimization
 
@@ -76,4 +76,4 @@ gulp serve
 ```
 
 ## Licence
-[Licence](https://github.com/danielrohers/static-bootstrap/blob/master/LICENSE)
+[Licence](LICENSE)
