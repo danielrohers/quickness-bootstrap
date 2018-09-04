@@ -80,12 +80,13 @@ gulp.task('watch:uglify', () => {
 
 gulp.task('watch', ['watch:images', 'watch:minify', 'watch:templates', 'watch:uglify']);
 
-gulp.task('serve', ['watch', 'dist'], () => {
+gulp.task('serve', ['dist'], () => {
+  gulp.start('watch');
   gulp.src('./dist')
     .pipe(webserver({
       livereload: true,
       directoryListing: false,
-      port: process.env.PORT || '8080',
+      port: process.env.PORT || '3000',
       host: process.env.IP || 'localhost',
     }));
 });
